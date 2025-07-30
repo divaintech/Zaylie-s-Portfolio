@@ -1,0 +1,233 @@
+/* global presets */
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+
+body {
+  font-family: "Roboto", sans-serif;
+  background: linear-gradient(to right, #eb1bb0, #f55c04);
+  color: #333;
+  line-height: 1.6;
+  scroll-behavior: smooth;
+}
+/* Smooth transitions for all elements */
+* {
+  transition: all 0.3s ease-in-out;
+}
+/* === Navbar === */
+nav {
+  background: #c61407;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+.navbar {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  list-style: none;
+  padding: 20px;
+  margin: 0;
+}
+.navbar a {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+.navbar a:hover {
+  background: #fff;
+  color: #020114;
+}
+#home {
+  text-align: center;
+  padding: 100px 20px;
+  background-color: #e6f0ff;
+  border-radius: 10px;
+  margin: 30px auto;
+  max-width: 900px;
+}
+#home h1 {
+  font-size: 3rem;
+  color: #c61407;
+}
+#home h3 {
+  font-size: 1.5rem;
+  color: #c61407;
+  margin-bottom: 20px;
+}
+#about {
+  background: #ffe6f0;
+  padding: 60px 20px;
+  border-radius: 10px;
+  margin: 30px auto;
+  max-width: 900px;
+}
+#work {
+  background: #ffe6f0;
+  padding: 60px 20px;
+  border-radius: 10px;
+  margin: 30px auto;
+  max-width: 900px;
+}
+#work ul {
+  padding-left: 20px;
+}
+#work video {
+  display: block; color: #ea5b02;
+  margin-top: 20px;
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(230, 8, 8, 0.2);
+}
+#resume {
+  background: #f0f9ff;
+  padding: 60px 20px;
+  border-radius: 10px;
+  margin: 30px auto;
+  max-width: 900px;
+}
+
+table {
+  width: 100%;
+  margin-top: 20px;
+  border-collapse: collapse;
+  background-color: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+  padding: 12px;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+th {
+  background-color: #f53618;
+  color: white;
+}
+#contact {
+  background: #ffe6f0;
+  padding: 60px 20px;
+  border-radius: 10px;
+  margin: 30px auto;
+  max-width: 900px;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 20px;
+}
+input, textarea {
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+button {
+  background-color: #e02618;
+  color: white;
+  border: none;
+  padding: 12px;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 8px;
+}
+button:hover {
+  background-color: #fe2d2d;
+}
+footer {
+  background: #000000;
+  text-align: center;
+  padding: 40px 20px;
+  margin-top: 40px;
+  font-size: 0.95rem;
+}
+span {color:#ccc}
+footer h4 {
+  color: #fe2d2d;
+  margin-bottom: 10px;
+}
+p 
+{color: #000000;}
+footer audio {
+  margin: 10px 0;
+}
+/* Hero Section */
+.hero {
+  height: 100vh;
+  background: linear-gradient(to right, hsl(338, 59%, 75%), #ea480d);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  padding: 2rem;
+  position: relative;
+  overflow: hidden;
+}
+.hero::before {
+  content: '';
+  position: absolute;
+  top: -20%;
+  left: -10%;
+  width: 140%;
+  height: 140%;
+  background: radial-gradient(circle, rgba(255,255,255,0.1) 20%, transparent 80%);
+  animation: float 10s infinite linear;
+  z-index: 0;
+}
+.hero-content {
+  z-index: 1;
+  max-width: 700px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+  animation: fadeInDown 1s ease-out;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  animation: fadeInUp 1s ease-out;
+}
+
+.btn {
+  padding: 0.8rem 1.6rem;
+  background-color: white;
+  color: #fc5b25;
+  font-weight: bold;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+  background-color: #f0f0f0;
+}
+
+/* Animations */
+@keyframes fadeInDown {
+  from { opacity: 0; transform: translateY(-30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes float {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+h1 {color: #f0f0f0; justify-content: center;text-align: center;}

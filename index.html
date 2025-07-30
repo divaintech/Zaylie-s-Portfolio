@@ -4,13 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Zaylie's Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <h1>ZAYLIE KAMALDEEN</h1>
     <!--Navigation Bar-->
     <div>
       <nav>
-        <ul>
+        <ul class="navbar">
           <li><a href="#home">Home</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#work">Work</a></li>
@@ -20,17 +21,14 @@
       </nav>
     </div>
     <!--Sections-->
-    <div>
-      <section id="home">
-        <h1>Zaylie's Portfolio</h1>
-        <h3><em>Welcome To My Portfolio</em></h3>
-        <p>
-          Step in to my world of professionalism and creativity! Browse through
-          my latest projects and discover how I elevate brands with my
-          expertise.
-        </p>
-      </section>
-    </div>
+    <section id="home" class="hero">
+      <div class="hero-content">
+        <h1>Hello, I’m Zaylie</h1>
+        <p>A passionate web developer & designer</p>
+        <a href="#work" class="btn">View My Work</a>
+      </div>
+    </section>
+
     <div>
       <section id="about">
         <h2><strong>About Me:</strong></h2>
@@ -53,7 +51,8 @@
           <li>Animations</li>
         </ul>
         <video width="320" height="240" controls>
-  <source src="Untitled design  3.mp4" type="video/mp4">
+          <source src="Untitled design  3.mp4" type="video/mp4" />
+        </video>
       </section>
     </div>
     <div>
@@ -121,11 +120,16 @@
     <footer>
       <h4><i>THANK YOU</i></h4>
       <audio controls>
-  <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mp3">
-      <p>
+        <source
+          src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
+          type="audio/mp3"
+        />
+      </audio>
+      <br />
+      <span>
         I hope you give me the opportunity to bring my passion and expertise to
         your project, delivering designs that exceeds your expectations.
-      </p>
+      </span>
       <p>&copy; 2025 My Portfolio. All rights reserved.</p>
     </footer>
     <!--Footer ends-->
